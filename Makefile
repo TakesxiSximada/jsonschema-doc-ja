@@ -5,4 +5,5 @@ download:
 	@tx pull -l ja
 
 mo:
-	@sphinx-intl build
+	@mkdir -p LC_MESSAGES
+	@./make_mo.sh
