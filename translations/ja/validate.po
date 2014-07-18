@@ -1,0 +1,563 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Julian Berman
+# This file is distributed under the same license as the jsonschema package.
+# 
+# Translators:
+# TakesxiSximada <takesxi.sximada@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: jsonschema\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-13 15:11+0900\n"
+"PO-Revision-Date: 2014-07-17 03:41+0000\n"
+"Last-Translator: TakesxiSximada <takesxi.sximada@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/jsonschema/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# cb2413cdef1d4486acfe613a6b875b2c
+#: ../../validate.rst:3
+msgid "Schema Validation"
+msgstr "スキーマの検証"
+
+# e0a5ac14fcc74553a33e2e67e28652a9
+#: ../../validate.rst:10
+msgid "The Basics"
+msgstr "基本原則"
+
+# d16507fd85cd4794ba53af59c5b03d35
+#: ../../validate.rst:12
+msgid ""
+"The simplest way to validate an instance under a given schema is to use the "
+":func:`validate` function."
+msgstr "使用する特定のスキーマの下でインスタンスを検証する最も簡単な方法は、:func:`validate`  関数を検証する事です。"
+
+# 9137000cc6c84891a640c7690580b216
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:1
+msgid "Validate an instance under the given schema."
+msgstr "指定されたスキーマでインスタンスを検証します。"
+
+# f58707dea9004092846c06690d538ffa
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:8
+msgid ""
+":func:`validate` will first verify that the provided schema is itself valid,"
+" since not doing so can lead to less obvious error messages and fail in less"
+" obvious or consistent ways. If you know you have a valid schema already or "
+"don't care, you might prefer using the :meth:`~IValidator.validate` method "
+"directly on a specific validator (e.g. :meth:`Draft4Validator.validate`)."
+msgstr ""
+
+# 9f18d73d3b3b441ba5262136bb7057e9
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:16
+msgid "the instance to validate"
+msgstr "インスタンスを検証"
+
+# dff39b8df162407ca153e0140b4dc245
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:17
+msgid "the schema to validate with"
+msgstr "スキーマを検証"
+
+# 3f15bc8ab82b4699817051520fd20cde
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:18
+msgid ""
+"an :class:`IValidator` class that will be used to validate the instance."
+msgstr " :class:`IValidator` クラスはインスタンスを検証するために使われます。"
+
+# 8b6c182749f04bbdad48d57a5d141696
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:21
+msgid ""
+"If the ``cls`` argument is not provided, two things will happen in "
+"accordance with the specification. First, if the schema has a "
+":validator:`$schema` property containing a known meta-schema [#]_ then the "
+"proper validator will be used.  The specification recommends that all "
+"schemas contain :validator:`$schema` properties for this reason. If no "
+":validator:`$schema` property is found, the default validator class is "
+":class:`Draft4Validator`."
+msgstr ""
+
+# 4df4f57102184a25b54f77259c4bea8d
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:29
+msgid ""
+"Any other provided positional and keyword arguments will be passed on when "
+"instantiating the ``cls``."
+msgstr ""
+
+# 7fe3984dea2c41feb175076fb4d941c8
+# fc9040f63a864720a4b815c2fd5ca095
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:33
+#: ../../validate.rst:118
+msgid ":exc:`ValidationError` if the instance is invalid"
+msgstr "インスタンスが無効であった場合 :exc:`ValidationError`  です。"
+
+# 1c2307fa5c14472f8c7f2f4eb93fd78f
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:35
+msgid ":exc:`SchemaError` if the schema itself is invalid"
+msgstr "スキーマ自身が無効であった場合 :exc:`SchemaError` です。"
+
+# 0b0ae79603c543248d393b7b55123384
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:37
+msgid "Footnotes"
+msgstr "脚注"
+
+# 599169976aa04d4c82ce533adf3e5fe6
+#: ../../../jsonschema/validators.pydocstring of jsonschema.validate:38
+msgid "known by a validator registered with :func:`validates`"
+msgstr " :func:`validates` とともに 登録されているバリデーターによって知られている"
+
+# 0a804a6e196e451c99a9d653e8b5bb33
+#: ../../validate.rst:17
+msgid ""
+"For information on creating JSON schemas to validate your data, there is a "
+"good introduction to JSON Schema fundamentals underway at `Understanding "
+"JSON Schema <http://spacetelescope.github.io/understanding-json-schema/>`_"
+msgstr ""
+
+# 12cad8e1769245638e8bb6455a9ed768
+#: ../../validate.rst:24
+msgid "The Validator Interface"
+msgstr "バリデータインターフェース"
+
+# 6d2ec112cc0744908d63b7d1b225d6fd
+#: ../../validate.rst:26
+msgid ""
+":mod:`jsonschema` defines an (informal) interface that all validators should"
+" adhere to."
+msgstr ":mod:`jsonschema`  (非公式な)インターフェースを定義しています。全てのバリデータはこれに従う必要があります。"
+
+# 913d788381384b8eb35a3a6351f47fcb
+#: ../../validate.rst:31
+msgid ""
+"the schema that the validator will validate with. It is assumed to be valid,"
+" and providing an invalid schema can lead to undefined behavior. See "
+":meth:`IValidator.check_schema` to validate a schema first."
+msgstr ""
+
+# c20482ef07fe4d8fae36bd4f5b3e5e25
+#: ../../validate.rst:36
+msgid ""
+"Override or extend the list of known types when validating the "
+":validator:`type` property. Should map strings (type names) to class objects"
+" that will be checked via :func:`isinstance`. See :ref:`validating-types` "
+"for details."
+msgstr ""
+
+# add98a302a92482eb8097e7f379dd45e
+#: ../../validate.rst:42
+msgid ""
+"an instance of :class:`RefResolver` that will be used to resolve "
+":validator:`$ref` properties (JSON references). If unprovided, one will be "
+"created."
+msgstr ""
+
+# 4b43d1f00dd34a16823d40bcc44c5302
+#: ../../validate.rst:45
+msgid ""
+"an instance of :class:`FormatChecker` whose :meth:`~conforms` method will be"
+" called to check and see if instances conform to each :validator:`format` "
+"property present in the schema. If unprovided, no validation will be done "
+"for :validator:`format`."
+msgstr ""
+
+# a342e70ef0564d1685f477204e9ae9e6
+#: ../../validate.rst:54
+msgid ""
+"The default mapping of JSON types to Python types used when validating "
+":validator:`type` properties in JSON schemas."
+msgstr ""
+
+# 75e2804e7b154f6480578103a8b7228f
+#: ../../validate.rst:59
+msgid ""
+"An object representing the validator's meta schema (the schema that "
+"describes valid schemas in the given version)."
+msgstr ""
+
+# f8a29590be4f4ccb935f3bd4de6ec236
+#: ../../validate.rst:64
+msgid ""
+"A mapping of validators (:class:`str`\\s) to functions that validate the "
+"validator property with that name. For more information see :ref:`creating-"
+"validators`."
+msgstr ""
+
+# 6c30d475254844c898d03a691aa1d907
+#: ../../validate.rst:70
+msgid "The schema that was passed in when initializing the validator."
+msgstr "バリデータを初期化するときに渡されたスキーマです。"
+
+# 433339100f8d44f4ac88b87433ff1009
+#: ../../validate.rst:75
+msgid "Validate the given schema against the validator's :attr:`META_SCHEMA`."
+msgstr ""
+
+# 12e8a86854784c3c9d0e7b813388bdb1
+#: ../../validate.rst:77
+msgid ":exc:`SchemaError` if the schema is invalid"
+msgstr "スキーマが無効であった場合 :exc:`SchemaError` です。"
+
+# dd6aae8ece1f40fabecb1285d75fe266
+#: ../../validate.rst:81
+msgid "Check if the instance is of the given (JSON Schema) type."
+msgstr "与えられた(JSON Schema)型のインスタンスかをチェックします。"
+
+# f7b9f3d17ea3493e8436f0b7591539df
+# 0b6b529d16684bd586a9919c53a438b3
+# 9419a525d60f4125a557049711fee098
+#: ../../validate.rst:84 ../../validate.rst:91
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.conforms:6
+msgid "bool"
+msgstr "bool"
+
+# a5a2aaca3d25447d866d37d4e666e5dc
+#: ../../validate.rst:85
+msgid ":exc:`UnknownType` if ``type`` is not a known type."
+msgstr "``type`` が未知の型だったら :exc:`UnknownType` です。"
+
+# 7e3518d196664250bf34118ce4cfb2af
+# 234a35fd6e8b4614938fe90b9bcbb83c
+#: ../../validate.rst:89 ../../validate.rst:116
+msgid "Check if the instance is valid under the current :attr:`schema`."
+msgstr "インスタンスが現在の :attr:`schema` 下で有効なかどうか確認"
+
+# f3ff4f41faf04bbbb7fa96fb7d8a397b
+#: ../../validate.rst:91
+msgid ""
+"bool  >>> schema = {\"maxItems\" : 2} >>> "
+"Draft3Validator(schema).is_valid([2, 3, 4]) False"
+msgstr "bool  >>> schema = {\"maxItems\" : 2} >>> Draft3Validator(schema).is_valid([2, 3, 4]) False"
+
+# 9b554a2d936c48b492222cfd2d4bc22e
+#: ../../validate.rst:99
+msgid "Lazily yield each of the validation errors in the given instance."
+msgstr "特定のインスタンスの検証エラーを遅延してyieldします。"
+
+# ae5730b0a1d84421bbb1748ec20d48a0
+#: ../../validate.rst:101
+msgid ""
+"an iterable of :exc:`ValidationError`\\s  >>> schema = { ...     \"type\" : "
+"\"array\", ...     \"items\" : {\"enum\" : [1, 2, 3]}, ...     \"maxItems\" "
+": 2, ... } >>> v = Draft3Validator(schema) >>> for error in "
+"sorted(v.iter_errors([2, 3, 4]), key=str): ...     print(error.message) 4 is"
+" not one of [1, 2, 3] [2, 3, 4] is too long"
+msgstr "an iterable of :exc:`ValidationError`\\s  >>> schema = { ...     \"type\" : \"array\", ...     \"items\" : {\"enum\" : [1, 2, 3]}, ...     \"maxItems\" : 2, ... } >>> v = Draft3Validator(schema) >>> for error in sorted(v.iter_errors([2, 3, 4]), key=str): ...     print(error.message) 4 is not one of [1, 2, 3] [2, 3, 4] is too long"
+
+# 3e873d7f51724f258c2212677ab8642c
+#: ../../validate.rst:101
+msgid "an iterable of :exc:`ValidationError`\\s"
+msgstr ":exc:`ValidationError` のイテレータ"
+
+# a5781e6492f6486f97be38a78a8eb2c9
+#: ../../validate.rst:127
+msgid ""
+"All of the :ref:`versioned validators <versioned-validators>` that are "
+"included with :mod:`jsonschema` adhere to the interface, and implementors of"
+" validators that extend or complement the ones included should adhere to it "
+"as well. For more information see :ref:`creating-validators`."
+msgstr ""
+
+# e59361c807c04c188bfdb77f8f20c457
+#: ../../validate.rst:136
+msgid "Validating With Additional Types"
+msgstr "その他の種類の検証"
+
+# f950d08329524fc9b4b8a58b3098ca89
+#: ../../validate.rst:138
+msgid ""
+"Occasionally it can be useful to provide additional or alternate types when "
+"validating the JSON Schema's :validator:`type` property. Validators allow "
+"this by taking a ``types`` argument on construction that specifies "
+"additional types, or which can be used to specify a different set of Python "
+"types to map to a given JSON type."
+msgstr ""
+
+# b13a30d840c24378b9f9d5ae205409f0
+#: ../../validate.rst:144
+msgid ""
+":mod:`jsonschema` tries to strike a balance between performance in the "
+"common case and generality. For instance, JSON Schema defines a ``number`` "
+"type, which can be validated with a schema such as ``{\"type\" : "
+"\"number\"}``. By default, this will accept instances of Python "
+":class:`numbers.Number`. This includes in particular :class:`int`\\s and "
+":class:`float`\\s, along with :class:`decimal.Decimal` objects, "
+":class:`complex` numbers etc. For ``integer`` and ``object``, however, "
+"rather than checking for :class:`numbers.Integral` and "
+":class:`collections.abc.Mapping`, :mod:`jsonschema` simply checks for "
+":class:`int` and :class:`dict`, since the more general instance checks can "
+"introduce significant slowdown, especially given how common validating these"
+" types are."
+msgstr ""
+
+# c7c847724f524188841f22e4630f6395
+#: ../../validate.rst:156
+msgid ""
+"If you *do* want the generality, or just want to add a few specific "
+"additional types as being acceptible for a validator, :class:`IValidator`\\s"
+" have a ``types`` argument that can be used to provide additional or new "
+"types."
+msgstr ""
+
+# d48bf980350d4c4baaffccc70cdc5a1e
+#: ../../validate.rst:170
+msgid ""
+"The list of default Python types for each JSON type is available on each "
+"validator in the :attr:`IValidator.DEFAULT_TYPES` attribute. Note that you "
+"need to specify all types to match if you override one of the existing JSON "
+"types, so you may want to access the set of default types when specifying "
+"your additional type."
+msgstr ""
+
+# 886c16eb60114534808e5e5389c62d39
+#: ../../validate.rst:179
+msgid "Versioned Validators"
+msgstr "バージョン管理されたバリデータ"
+
+# f2825e4b99a740b69648681629d8e348
+#: ../../validate.rst:181
+msgid ""
+":mod:`jsonschema` ships with validators for various versions of the JSON "
+"Schema specification. For details on the methods and attributes that each "
+"validator provides see the :class:`IValidator` interface, which each "
+"validator implements."
+msgstr ""
+
+# ac3b0c9c45364508880caec4bbc1a3e3
+#: ../../validate.rst:191
+msgid ""
+"For example, if you wanted to validate a schema you created against the "
+"Draft 4 meta-schema, you could use:"
+msgstr ""
+
+# fad6683e7b8f420285d9f5ad2e69da2f
+#: ../../validate.rst:212
+msgid "Validating Formats"
+msgstr "検証フォーマット"
+
+# ba70a0d6b8654fe7ab1a73d4812f6334
+#: ../../validate.rst:214
+msgid ""
+"JSON Schema defines the :validator:`format` property which can be used to "
+"check if primitive types (``string``\\s, ``number``\\s, ``boolean``\\s) "
+"conform to well-defined formats. By default, no validation is enforced, but "
+"optionally, validation can be enabled by hooking in a format-checking object"
+" into an :class:`IValidator`."
+msgstr ""
+
+# 097356cf980748a5ae4aa948155826a3
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker:1
+msgid "A ``format`` property checker."
+msgstr "フォーマットプロパティチェッカー"
+
+# 04043bd7bae740a5912743de00149702
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker:3
+msgid ""
+"JSON Schema does not mandate that the ``format`` property actually do any "
+"validation. If validation is desired however, instances of this class can be"
+" hooked into validators to enable format validation."
+msgstr ""
+
+# eef7eb12306f4334ac494ad61ba9ac16
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker:7
+msgid ""
+":class:`FormatChecker` objects always return ``True`` when asked about "
+"formats that they do not know how to validate."
+msgstr ""
+
+# 066c295f8eeb4d9a824d787519b129db
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker:10
+msgid ""
+"To check a custom format using a function that takes an instance and returns"
+" a ``bool``, use the :meth:`FormatChecker.checks` or "
+":meth:`FormatChecker.cls_checks` decorators."
+msgstr ""
+
+# c5c82c8aa49c4b25a1b8c7b4c705a707
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker:14
+msgid ""
+"the known formats to validate. This argument can be used to limit which "
+"formats will be used during validation."
+msgstr ""
+
+# d263a13b24de4b449664d50368c2f3a0
+#: ../../validate.rst:236
+msgid ""
+"A mapping of currently known formats to tuple of functions that validate "
+"them and errors that should be caught. New checkers can be added and removed"
+" either per-instance or globally for all checkers using the "
+":meth:`FormatChecker.checks` or :meth:`FormatChecker.cls_checks` decorators "
+"respectively."
+msgstr ""
+
+# fd59fe575a074fbb9de02946574cb854
+#: ../../validate.rst:244
+msgid "Register a decorated function as *globally* validating a new format."
+msgstr "新しいフォーマットとしてグローバルに検証されるデコレーションされた関数を保存します。"
+
+# 8dc87550b07a452aa36f08db0513895b
+#: ../../validate.rst:246
+msgid ""
+"Any instance created after this function is called will pick up the supplied"
+" checker."
+msgstr "この関数が呼ばれたあとインスタンスが生成されて、付属のチェッカーをピックアップします。"
+
+# 2ca5dfa7ad6c4bcc8335631692004dc8
+# f670a282171c4f7a816ff71421eca430
+#: ../../validate.rst:249 ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.checks:3
+msgid "the format that the decorated function will check"
+msgstr "デコレーションされた関数がチェックするフォーマット"
+
+# abd9dd71478943ad9ee3eb3303ccf1ba
+# 372958190a604a7fa7726ee1092c0b09
+#: ../../validate.rst:250 ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.checks:4
+msgid ""
+"the exception(s) raised by the decorated function when an invalid instance "
+"is found. The exception object will be accessible as the "
+":attr:`ValidationError.cause` attribute of the resulting validation error."
+msgstr ""
+
+# a13ba8a44ac64350b279d2c101aae514
+# e60e8354c01f4eabadf5dd1c7148478a
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker.check:1
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.conforms:1
+msgid "Check whether the instance conforms to the given format."
+msgstr "インスタンスが与えられたフォーマットに準拠しているかどうかをチェックします。"
+
+# fc26a65cae1447d7a2d6a8128b3f1a01
+# c59c7eacf5674cac9777f8d034d28aad
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker.check:3
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.conforms:3
+msgid "the instance to check"
+msgstr "インスタンスをチェックするには"
+
+# 5c6f0e88ff674299b5c5ef8b081e601a
+# 84b229688c95484981e2bc0c81f79e1d
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker.check:5
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.conforms:5
+msgid "the format that instance should conform to"
+msgstr "インスタンスの形式に従う必要があります。"
+
+# 0670ef943c594e198095e69b7158b97b
+# 5ec3120a57ea46168da15324f62764e5
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker.check:4
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.conforms:4
+msgid "any primitive type (str, number, bool)"
+msgstr "任意のプリミティブ型  (str, number, bool)"
+
+# 4933ba7125a6421881cdd96f1c42c3cf
+#: ../../../jsonschema/_format.pydocstring of jsonschema.FormatChecker.check:6
+msgid ":exc:`FormatError` if instance does not conform to format"
+msgstr "インスタンスがフォーマットに準拠していない場合 :exc:`FormatError` です。"
+
+# 4c9e14efba124b2f9b107a4b497cd22f
+#: ../../../jsonschema/_format.pydocstring of
+#: jsonschema.FormatChecker.checks:1
+msgid "Register a decorated function as validating a new format."
+msgstr "新しいフォマットとして検証するデコレーションされた関数を保存します。"
+
+# 58ba056f63634b1a821a1f192a1d3cbb
+#: ../../validate.rst:257
+msgid ""
+"There are a number of default checkers that :class:`FormatChecker`\\s know "
+"how to validate. Their names can be viewed by inspecting the "
+":attr:`FormatChecker.checkers` attribute. Certain checkers will only be "
+"available if an appropriate package is available for use. The available "
+"checkers, along with their requirement (if any,) are listed below."
+msgstr ""
+
+# 967b72e85591494299c4194764d17de5
+#: ../../validate.rst:264
+msgid "Checker"
+msgstr "チェッカー"
+
+# cbbe52c1fb6d4d36b678a88d3883b94d
+#: ../../validate.rst:264
+msgid "Notes"
+msgstr "ノート"
+
+# da2171d59ad34a889e75a1c136a0a197
+#: ../../validate.rst:266
+msgid "hostname"
+msgstr "ホスト名"
+
+# 3bca659c33a947e897890a8414a0defc
+#: ../../validate.rst:267
+msgid "ipv4"
+msgstr "ipv4"
+
+# afaa24f2b33c42bc81c645055dd0a6d2
+#: ../../validate.rst:268
+msgid "ipv6"
+msgstr "ipv6"
+
+# eb515450a59d4133877c471bbc368440
+#: ../../validate.rst:268
+msgid "OS must have :func:`socket.inet_pton` function"
+msgstr "OSに  :func:`socket.inet_pton`  関数がある事が必要です"
+
+# 88e21fa769b0484db5b8320d1685145f
+#: ../../validate.rst:269
+msgid "email"
+msgstr "Eメール"
+
+# 2415aefb46374492a43964bcb06179b3
+#: ../../validate.rst:270
+msgid "uri"
+msgstr "URI"
+
+# 08be189d274a42d38edf2e8f3b7ccfe5
+#: ../../validate.rst:270
+msgid "requires rfc3987_"
+msgstr "rfc3987_ が必要です"
+
+# 801ac5f582fc481c8ebb57c88f07594e
+#: ../../validate.rst:271
+msgid "date-time"
+msgstr "日時"
+
+# 042b0c150bd945d996c3c1efd076cc67
+#: ../../validate.rst:271
+msgid "requires strict-rfc3339_ [#]_"
+msgstr "requires strict-rfc3339_ [#]_"
+
+# 5a88b75a47a64b3287c913550ca75267
+#: ../../validate.rst:272
+msgid "date"
+msgstr "日付"
+
+# 00c36ee4a72d49b9abdb807c1aff48e9
+#: ../../validate.rst:273
+msgid "time"
+msgstr "時間"
+
+# 55347daa61c247ee9fc7266b1d44bb13
+#: ../../validate.rst:274
+msgid "regex"
+msgstr "正規表現"
+
+# 862cec4b2a9f4c17a88d6f8ae7b0f25d
+#: ../../validate.rst:275
+msgid "color"
+msgstr "色"
+
+# 25e23e6928084e3f956fc28b6a0b5255
+#: ../../validate.rst:275
+msgid "requires webcolors_"
+msgstr "webcolors_ が必要です"
+
+# 4f5c19a424784d49be81a072fff4a07b
+#: ../../validate.rst:279
+msgid ""
+"For backwards compatibility, isodate_ is also supported, but it will allow "
+"any `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ date-time, not just "
+"`RFC 3339 <http://www.ietf.org/rfc/rfc3339.txt>`_ as mandated by the JSON "
+"Schema specification."
+msgstr ""

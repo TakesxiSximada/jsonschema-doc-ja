@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Julian Berman
+# This file is distributed under the same license as the jsonschema package.
+# 
+# Translators:
+# TakesxiSximada <takesxi.sximada@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: jsonschema\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-13 15:11+0900\n"
+"PO-Revision-Date: 2014-07-17 06:58+0000\n"
+"Last-Translator: TakesxiSximada <takesxi.sximada@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/jsonschema/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 07e0ee6ea0d24accbe9ab75598207868
+#: ../../faq.rst:3
+msgid "Frequently Asked Questions"
+msgstr "よくある質問"
+
+# 91e53e3a32dc4f45a58c127b3897c8cc
+#: ../../faq.rst:7
+msgid ""
+"Why doesn't my schema that has a default property actually set the default "
+"on my instance?"
+msgstr "このスキーマはデフォルト属性を持っているのに実際にはインスタンス上でデフォルトを設定してくれないのはなぜですか?"
+
+# 1da162ef24bb4e4fb46b04dfd20ab5c6
+#: ../../faq.rst:9
+msgid ""
+"The basic answer is that the specification does not require that "
+":validator:`default` actually do anything."
+msgstr "デフォルトのバリデータが実際に何かをしている必要はないというのが仕様です。"
+
+# 273417d066664292bc967ccd76d48265
+#: ../../faq.rst:12
+msgid ""
+"For an inkling as to *why* it doesn't actually do anything, consider that "
+"none of the other validators modify the instance either. More importantly, "
+"having :validator:`default` modify the instance can produce quite peculiar "
+"things. It's perfectly valid (and perhaps even useful) to have a default "
+"that is not valid under the schema it lives in! So an instance modified by "
+"the default would pass validation the first time, but fail the second!"
+msgstr ""
+
+# fd8f0be18a28470aa181b26a0600a637
+#: ../../faq.rst:19
+msgid ""
+"Still, filling in defaults is a thing that is useful. :mod:`jsonschema` "
+"allows you to :doc:`define your own validators <creating>`, so you can "
+"easily create a :class:`IValidator` that does do default setting. Here's "
+"some code to get you started:"
+msgstr ""
+
+# 6ca4c9df95624e208a2d9877ee9c0885
+#: ../../faq.rst:59
+msgid ""
+"See the above-linked document for more info on how this works, but "
+"basically, it just extends the :validator:`properties` validator on a "
+":class:`Draft4Validator` to then go ahead and update all the defaults."
+msgstr ""
+
+# b4f828d59e544344aab39553c1ea5cc1
+#: ../../faq.rst:63
+msgid ""
+"If you're interested in a more interesting solution to a larger class of "
+"these types of transformations, keep an eye on `Seep "
+"<https://github.com/Julian/Seep>`_, which is an experimental data "
+"transformation and extraction library written on top of :mod:`jsonschema`."
+msgstr ""
+
+# 44f7c17c195b49fbab99353771fd581c
+#: ../../faq.rst:70
+msgid "How do jsonschema version numbers work?"
+msgstr "jsonschema のバージョン番号のしくみは？"
+
+# c21f427db6e643fa98f0f68435202d61
+#: ../../faq.rst:72
+msgid ""
+"``jsonschema`` tries to follow the `Semantic Versioning "
+"<http://semver.org/>`_ specification."
+msgstr ""
+
+# 9bc65bd0146840909ab938d0fb200638
+#: ../../faq.rst:75
+msgid ""
+"This means broadly that no backwards-incompatible changes should be made in "
+"minor releases (and certainly not in dot releases)."
+msgstr ""
+
+# 1c8c897e07c44f4686ea0c24085cacca
+#: ../../faq.rst:78
+msgid ""
+"The full picture requires defining what constitutes a backwards-incompatible"
+" change."
+msgstr ""
+
+# 42e874b493964ffcb457542468d21e38
+#: ../../faq.rst:81
+msgid ""
+"The following are simple examples of things considered public API, and "
+"therefore should *not* be changed without bumping a major version number:"
+msgstr ""
+
+# 46a5437e819342f68aecb7a8c20babe3
+#: ../../faq.rst:84
+msgid ""
+"module names and contents, when not marked private by Python convention (a "
+"single leading underscore)"
+msgstr ""
+
+# 869cb80f35a9406bb20937ef90475520
+#: ../../faq.rst:87
+msgid "function and object signature (parameter order and name)"
+msgstr "関数とオブジェクトのシグネーチャ (パラメータの順序と名前)"
+
+# 416a367a14a3462683992a3cd062bfea
+#: ../../faq.rst:89
+msgid ""
+"The following are *not* considered public API and may change without notice:"
+msgstr "次は非公開APIです。これらは予告なく変更する場合があります。"
+
+# 89e5e5024da543d893813d882eb8eea7
+#: ../../faq.rst:91
+msgid ""
+"the exact wording and contents of error messages; typical reasons to do this"
+" seem to involve unit tests. API users are encouraged to use the extensive "
+"introspection provided in :class:`~jsonschema.exceptions.ValidationError`\\s"
+" instead to make meaningful assertions about what failed."
+msgstr ""
+
+# c85a57cb18ca469c9a4a79a3f3c60c52
+#: ../../faq.rst:97
+msgid "the order in which validation errors are returned or raised"
+msgstr "バリデーションエラーが返されるか送出される順序"
+
+# 99d83d41f06a4d4496df229aeef8008c
+#: ../../faq.rst:99
+msgid "anything marked private"
+msgstr "非公開設定"
+
+# dc03ff457f004d6191bf6432dac7fc80
+#: ../../faq.rst:101
+msgid ""
+"With the exception of the last of those, flippant changes are avoided, but "
+"changes can and will be made if there is improvement to be had. Feel free to"
+" open an issue ticket if there is a specific issue or question worth "
+"raising."
+msgstr ""

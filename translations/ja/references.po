@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Julian Berman
+# This file is distributed under the same license as the jsonschema package.
+# 
+# Translators:
+# TakesxiSximada <takesxi.sximada@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: jsonschema\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-13 15:11+0900\n"
+"PO-Revision-Date: 2014-07-17 07:27+0000\n"
+"Last-Translator: TakesxiSximada <takesxi.sximada@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/jsonschema/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 99981448d74344e5b23d14357e52a965
+#: ../../references.rst:3
+msgid "Resolving JSON References"
+msgstr "Resolving JSON References"
+
+# 39da65dba34945e8b6dd48f77261ee62
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:1
+msgid "Resolve JSON References."
+msgstr "Resolve JSON References."
+
+# e97c3146b9d043bc92b7f36d95fa21f0
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:3
+msgid "URI of the referring document"
+msgstr "参照文書のURI"
+
+# fe57aa7f09b64123b1fad10774270f33
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:4
+msgid "the actual referring document"
+msgstr "実際の参照ドキュメント"
+
+# 136fb74ac96043b4b435d63604fa3feb
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:5
+msgid "a mapping from URIs to documents to cache"
+msgstr "キャッシュするドキュメントの URI からマッピング"
+
+# 686090535bba445fa1ac67c98a7a4272
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:6
+msgid "whether remote refs should be cached after first resolution"
+msgstr ""
+
+# ce4d21f37d05471696400edce30b6204
+#: ../../../jsonschema/validators.pydocstring of jsonschema.RefResolver:8
+msgid ""
+"a mapping from URI schemes to functions that should be used to retrieve them"
+msgstr "URI スキームからそれらを取得するために使用する必要がある関数へのマッピング"
+
+# becaf2ffdda1475188cc8ff1c49342b0
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.from_schema:1
+msgid "Construct a resolver from a JSON schema object."
+msgstr "JSON schemaオブジェクトからリゾルバを構築します。"
+
+# ada80c35d3944682bf6c5960cc597acc
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.from_schema:3
+msgid "the referring schema"
+msgstr "参照元のスキーマ"
+
+# b898890413e3405a9e4f313e8d93ea28
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.from_schema:4
+msgid ":class:`RefResolver`"
+msgstr ":class:`RefResolver`"
+
+# 44350badaa354743940e18eba05167e5
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_fragment:1
+msgid "Resolve a ``fragment`` within the referenced ``document``."
+msgstr "ドキュメント内で参照された ``fragment`` を解決します。"
+
+# 5798c496d51f43ba90a3131d672d15b6
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_fragment:3
+msgid "the referrant document"
+msgstr "参照先のドキュメント"
+
+# f0a88d7fe4a844f1b2b0f92865a20e01
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_fragment:4
+msgid "a URI fragment to resolve within it"
+msgstr "そのなかで解決するための URI フラグメント"
+
+# 4ea1f6b985d148f59d4ea10749a78798
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:1
+msgid "Resolve a remote ``uri``."
+msgstr "リモートのURIを解決します。"
+
+# c7623075835449cc9f7d933a87adf0ff
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:3
+msgid ""
+"Does not check the store first, but stores the retrieved document in the "
+"store if :attr:`RefResolver.cache_remote` is True."
+msgstr ""
+
+# 78c90aa3d9424a50891b348c1dea2b24
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:8
+msgid ""
+"If the requests_ library is present, ``jsonschema`` will use it to request "
+"the remote ``uri``, so that the correct encoding is detected and used."
+msgstr ""
+
+# 8fd93947231a40bcb36eda8ec8425200
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:12
+msgid ""
+"If it isn't, or if the scheme of the ``uri`` is not ``http`` or ``https``, "
+"UTF-8 is assumed."
+msgstr ""
+
+# ed66451d71e049019fb0d4b2ac01d5b7
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:15
+msgid "the URI to resolve"
+msgstr "URI を解決するには"
+
+# 940241696434448a8f32504bde4a13e9
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolve_remote:16
+msgid "the retrieved document"
+msgstr "取得したドキュメント"
+
+# fca4610d25f64c19ab586b81eec1d2dd
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolving:1
+msgid ""
+"Context manager which resolves a JSON ``ref`` and enters the resolution "
+"scope of this ref."
+msgstr "コンテキストマネージャーが JSON\"ref\"を解決し、ref の解決範囲に入ります。"
+
+# d9e0a4593ec0477aaeb311e6254cb8b5
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.RefResolver.resolving:4
+msgid "reference to resolve"
+msgstr "参照を解決するには"
+
+# 9601db9a54b745ae93a1964454980541
+#: ../../references.rst:13
+msgid "A JSON reference failed to resolve."
+msgstr "JSONの参照の解決に失敗しました。"

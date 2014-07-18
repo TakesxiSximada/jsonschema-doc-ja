@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Julian Berman
+# This file is distributed under the same license as the jsonschema package.
+# 
+# Translators:
+# TakesxiSximada <takesxi.sximada@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: jsonschema\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-13 15:11+0900\n"
+"PO-Revision-Date: 2014-07-16 01:38+0000\n"
+"Last-Translator: TakesxiSximada <takesxi.sximada@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/jsonschema/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 46da3ecf0d0f4c3e95ca60c711c3e06b
+#: ../../creating.rst:5
+msgid "Creating or Extending Validators"
+msgstr "拡張バリデーターを作成します"
+
+# c3a13cacff3c40238cc87333e9be68ff
+#: ../../creating.rst:11
+msgid "Create a new validator (class)."
+msgstr "バリデータ(クラス)を作成します。"
+
+# 557f5922e64440e488243423dc9128c3
+#: ../../creating.rst:13
+msgid "the meta schema for the new validator class"
+msgstr "新しいバリデーター クラスのメタスキーマ"
+
+# 6bfc02219dfe4229b4023c5a3a0dac29
+#: ../../creating.rst:15
+msgid ""
+"a mapping from validator names to functions that validate the given name. "
+"Each function should take 4 arguments: a validator instance, the value of "
+"the current validator property in the instance being validated, the "
+"instance, and the schema."
+msgstr "バリデーターの名前から、指定した名前を検証する関数へのマッピング各関数は、4 個の引数を取る必要があります: 検証インスタンス、検証対象のインスタンスで、現在「validator」プロパティーの値、インスタンス、およびスキーマです。"
+
+# 12448d3d8cb34900b086f4b54f0f686a
+#: ../../creating.rst:20
+msgid ""
+"an identifier for the version that this validator will validate. If "
+"provided, the returned validator class will have its ``__name__`` set to "
+"include the version, and also will have :func:`validates` automatically "
+"called for the given version."
+msgstr "この検証コントロールが検証するバージョンの識別子です。提供、返さバリデータ クラスがその '__name__ ' に設定、バージョンが含まれていてもが: func: 'を検証' 特定のバージョンを自動的に呼び出されます。"
+
+# 55bb3914d114417989a09299a3b69755
+#: ../../creating.rst:25
+msgid ""
+"a default mapping to use for instances of the validator when mapping between"
+" JSON types to Python types. The default for this argument is probably fine."
+" Instances of the returned validator can still have their types customized "
+"on a per-instance basis."
+msgstr ""
+
+# 159d2249df154ac3829a852af3526147
+# 5d313f0e32fe4df68a0da96c0ed8480e
+#: ../../creating.rst:30 ../../creating.rst:53
+msgid "a new :class:`jsonschema.IValidator` class"
+msgstr "新しい :class:`jsonschema.IValidator` クラス"
+
+# f55e48080fde48dfad055a744b62173f
+#: ../../creating.rst:35
+msgid "Create a new validator that extends an existing validator class."
+msgstr "既存のバリデータを拡張して新しいバリデータを作成します"
+
+# d58acd1d210546fb88b602eb0276e5d7
+#: ../../creating.rst:37
+msgid "an existing validator class"
+msgstr "既存のバリデータクラス"
+
+# c0ef5abcea12425faa8093afe968ac79
+#: ../../creating.rst:39
+msgid ""
+"a set of new validators to add to the new validator.  .. note::      Any "
+"validators with the same name as an existing one will     (silently) replace"
+" the old validator entirely.      If you wish to extend an old validator, "
+"call it directly in the     replacing validator function by retrieving it "
+"using     ``OldValidator.VALIDATORS[\"the validator\"]``."
+msgstr ""
+
+# f90b40d54d4c423db3355dbe7781d1e4
+#: ../../creating.rst:39
+msgid "a set of new validators to add to the new validator."
+msgstr "新しく追加されたバリデータのセット"
+
+# b7b639688ca349ee89dacc78da058bac
+#: ../../creating.rst:44
+msgid ""
+"Any validators with the same name as an existing one will (silently) replace"
+" the old validator entirely."
+msgstr "既存のものと同じ名前を持つ任意のバリデータは(静かに) 完全に古いバリデータに置き換えられます。"
+
+# 63ba311ab08d46e39687f47f43570dc7
+#: ../../creating.rst:47
+msgid ""
+"If you wish to extend an old validator, call it directly in the replacing "
+"validator function by retrieving it using ``OldValidator.VALIDATORS[\"the "
+"validator\"]``."
+msgstr ""
+
+# 3f278566124a4b6396bd70590c6499ab
+#: ../../creating.rst:51
+msgid "a version for the new validator"
+msgstr "新しいバリデータの為のバージョン"
+
+# 1c33fcfb76fd46838ceda5f9abb68a71
+#: ../../creating.rst:55
+msgid "Meta Schemas"
+msgstr "メタスキーマ"
+
+# 3310a48b74f74d57a766d16e2dbf4e7b
+#: ../../creating.rst:57
+msgid "The new validator will just keep the old validator's meta schema."
+msgstr "新しいバリデータは単に古いバリデータのメタスキーマを維持するでしょう。"
+
+# 5fa1851e12ca477dbefcaf4f95437585
+#: ../../creating.rst:59
+msgid ""
+"If you wish to change or extend the meta schema in the new validator, modify"
+" ``META_SCHEMA`` directly on the returned class."
+msgstr ""
+
+# 7bb3c4f66c50483da5e8a0a24d228219
+#: ../../creating.rst:62
+msgid ""
+"The meta schema on the new validator will not be a copy, so you'll probably "
+"want to copy it before modifying it to not affect the old validator."
+msgstr ""
+
+# 53029e32c79d40b6ab41ee4793949063
+#: ../../creating.rst:69
+msgid "Retrieve the validator appropriate for validating the given schema."
+msgstr "バリデーションするスキーマに適切なバリデータを検索します。"
+
+# baaf4bc0d7fb4a31bac5f9a44678052c
+#: ../../creating.rst:71
+msgid ""
+"Uses the :validator:`$schema` property that should be present in the given "
+"schema to look up the appropriate validator."
+msgstr ""
+
+# ee7c4e2a9554411faf01e5bf6192b0ff
+#: ../../creating.rst:74
+msgid "the schema to look at"
+msgstr "このスキーマはぱっと見"
+
+# 93c8bab6ba1d4ff79bd28b48b7f620c0
+#: ../../creating.rst:75
+msgid ""
+"the default to return if the appropriate validator cannot be determined. If "
+"unprovided, the default will be to just return :class:`Draft4Validator`"
+msgstr "適切なバリデータを特定できない場合に返すデフォルトです。意図しないものの場合、デフォルトでは単に :class:`Draft4Validator` を返します。"
+
+# c1d34b14902a4863934e92711da2bfb1
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.validators.validates:1
+msgid ""
+"Register the decorated validator for a ``version`` of the specification."
+msgstr "バージョンを特定する為のデコレーションされたバリデータを保存します。"
+
+# 301457a814af4bf08344bfc9767e8df9
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.validators.validates:3
+msgid ""
+"Registered validators and their meta schemas will be considered when parsing"
+" ``$schema`` properties' URIs."
+msgstr "バリデータを保存しました。またそれらのメタスキーマは ``$schema`` 属性の URIを解析するときに考慮されます。"
+
+# 34ab7fc7d3c64def9aa280304ca2f508
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.validators.validates:6
+msgid "an identifier to use as the version's name"
+msgstr "バージョン名として使用する為の識別子"
+
+# 81d75cf760064136b1de29fb1a6a09bb
+#: ../../../jsonschema/validators.pydocstring of
+#: jsonschema.validators.validates:7
+msgid "a class decorator to decorate the validator with the version"
+msgstr "バージョンのバリデータをデコレーションするためのクラスデコレータ"
+
+# efe8394152bb4cc88bdb590d08c29c46
+#: ../../creating.rst:84
+msgid "Creating Validation Errors"
+msgstr "バリデーションエラーを作る"
+
+# 5a00e7e43ef84c84ba752a1a2c9cd954
+#: ../../creating.rst:86
+msgid ""
+"Any validating function that validates against a subschema should call "
+":meth:`ValidatorMixin.descend`, rather than "
+":meth:`ValidatorMixin.iter_errors`. If it recurses into the instance, or "
+"schema, it should pass one or both of the ``path`` or ``schema_path`` "
+"arguments to :meth:`ValidatorMixin.descend` in order to properly maintain "
+"where in the instance or schema respsectively the error occurred."
+msgstr ""

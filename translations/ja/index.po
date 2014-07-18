@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, Julian Berman
+# This file is distributed under the same license as the jsonschema package.
+# 
+# Translators:
+# TakesxiSximada <takesxi.sximada@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: jsonschema\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-13 15:11+0900\n"
+"PO-Revision-Date: 2014-07-13 06:41+0000\n"
+"Last-Translator: TakesxiSximada <takesxi.sximada@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/jsonschema/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 69ba22bb880b4a4287a07278fa893665
+#: ../../index.rst:3
+msgid "jsonschema"
+msgstr "jsonschema"
+
+# c164f7c728154176ac13b74d56610853
+#: ../../index.rst:9
+msgid ""
+"``jsonschema`` is an implementation of `JSON Schema <http://json-"
+"schema.org>`_ for Python (supporting 2.6+ including Python 3)."
+msgstr "``jsonschema`` は `JSON Schema <http://json-schema.org>` のPython実装です(Python2.6以上とPython3をサポートしています)。"
+
+# f4b46bfa935b4ed4b211038c7be619f0
+#: ../../index.rst:36
+msgid ""
+"You can find further information (installation instructions, mailing list) "
+"as well as the source code and issue tracker on our `GitHub page "
+"<https://github.com/Julian/jsonschema/>`__."
+msgstr "私たち 'GitHub ページ < https://github.com/Julian/jsonschema/>' _ ソース コードと問題追跡だけでなく、インストール手順 （メーリング リスト） より詳細な情報を検索できます。"
+
+# 44e6312f432b472a8aaf9e30d0e4f659
+#: ../../index.rst:40
+msgid "Contents:"
+msgstr "Contents:"
+
+# be86cc45b4034ce4b393340cb718a1b6
+#: ../../index.rst:53
+msgid "Indices and tables"
+msgstr "Indices and tables"
+
+# 50ca30365f514712b13a4579d444493b
+#: ../../index.rst:55
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+# 533660306d6c448ebdcea7237210d4eb
+#: ../../index.rst:56
+msgid ":ref:`search`"
+msgstr ":ref:`search`"

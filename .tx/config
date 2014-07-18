@@ -1,0 +1,32 @@
+[main]
+host = https://www.transifex.com
+
+[jsonschema.creatingpot]
+file_filter = translations/<lang>/creating.po
+source_lang = en
+type = PO
+
+[jsonschema.errorspot]
+file_filter = translations/<lang>/errors.po
+source_lang = en
+type = PO
+
+[jsonschema.faqpot]
+file_filter = translations/<lang>/faq.po
+source_lang = en
+type = PO
+
+[jsonschema.indexpot]
+file_filter = translations/<lang>/index.po
+source_lang = en
+type = PO
+
+[jsonschema.referencespot]
+file_filter = translations/<lang>/references.po
+source_lang = en
+type = PO
+
+[jsonschema.validatepot]
+file_filter = translations/<lang>/validate.po
+source_lang = en
+type = PO
